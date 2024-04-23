@@ -3,16 +3,15 @@
 
 class Edge {
 private:
-    Node* Source;
     Node* Destination;
     int weight;
 public:
-    Edge(Node* source, Node* destination);
+    Edge(Node* destination);
+    Edge(Node* destination, int val); // Weighted edge
     ~Edge();
 
-    void setWeight(int i);
+    void setWeight(int val);
     int getWeight();
 };
-
 
 #endif // __Edge_h

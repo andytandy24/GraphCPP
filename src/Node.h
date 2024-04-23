@@ -11,8 +11,8 @@ public:
     ~Node();
 
     int edgeCount();
-
-    void addEdge(Edge* edge):
+    void connectNode(Node* node);
+    void connectNode(Node* node, int val); // Weighted connection
 };
 
 #endif // __Node_h

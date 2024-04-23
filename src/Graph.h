@@ -6,6 +6,7 @@
 class Graph {
 private:
     vector<Node*> nodeSet;
+    vector<vector<int>> adjacencyMatrix;
 public:
     Graph();
     ~Graph();
