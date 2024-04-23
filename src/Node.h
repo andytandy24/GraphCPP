@@ -1,11 +1,11 @@
 #ifndef __Node_h
 #define __Node_h
 
-#include <vector>
+#include <map>
 
 class Node {
 private:
-    vector<Edge*> edgeSet;
+    std::map<Edge*, Node*> edgeSet;
 public:
     Node();
     ~Node();
