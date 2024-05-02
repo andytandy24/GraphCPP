@@ -1,18 +1,23 @@
 #ifndef __Node_h
 #define __Node_h
 
-#include <map>
+#include <vector>
+#include "Edge.h"
 
 class Node {
 private:
-    std::map<Edge*, Node*> edgeSet;
+    std::vector<Edge*> edgeSet;
 public:
     Node();
     ~Node();
 
     int edgeCount();
-    void connectNode(Node* node);
-    void connectNode(Node* node, int val); // Weighted connection
+
+    // Edge to node
+    void connectToNode(Node* node);
+
+    // Weighted edge to node
+    void connectToNode(Node* node, int val);
 };
 
 #endif // __Node_h

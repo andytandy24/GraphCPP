@@ -1,14 +1,14 @@
 #ifndef __Edge_h
 #define __Edge_h
 
+class Node;
 class Edge {
 private:
-    Node* Destination;
+    Node* destination;
     int weight;
 public:
     Edge(Node* destination);
-    Edge(Node* destination, int val); // Weighted edge
-    ~Edge();
+    Edge(Node* destination, int val);
 
     void setWeight(int val);
     int getWeight();
